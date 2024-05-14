@@ -1,0 +1,112 @@
+.card {
+    max-width: 600px;
+    height: 260px;
+    padding: 1px 1px;
+    border: double 2px transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #fc67ad, #2effff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+
+  .cardMain {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px;
+  }
+
+  .cardMain h1{
+    color: #001f4e;
+    margin: 20px;
+    margin-bottom: -2px;
+    font-weight: 700;
+  }
+  
+  .icon{
+    margin-top: 8px;
+  }
+
+  .icon:hover {
+    cursor: pointer
+  }
+  
+  .icon:active{
+    transform: translateY(3px);
+  }
+
+  .description {
+    color: rgb(185, 181, 181);
+    margin: 30px 40px; 
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    margin: 30px 40px;
+  }
+  
+  .btn1, .btn2 {
+    width: 100%;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn1 {  
+    background-color: #001f4e;
+  }
+  
+  .btn2 {
+    background-color: #FF097B;
+  }
+  
+  .btn1:hover {
+    background-color: #00327c;
+    color: white;
+  }
+  
+  .btn2:hover {
+    color: white;
+    background-color: #D60867;
+  }
+
+  .btn1:active, .btn2:active{
+    transform: translateY(3px);
+  }
+
+  .btnShowModal {
+    width: 200px;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #001f4e;
+  }
+  
+  .btnShowModal:hover {
+    background-color: #00327c;
+    color: white;
+  }
+
+  .btnShowModal:active{
+    transform: translateY(3px);
+  }
+
+
+  @media(max-width: 463px){
+
+    .card {
+        max-width: 600px;
+        height: 400px;
+    }
+  }
